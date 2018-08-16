@@ -14,9 +14,14 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    QString searchedname;
 
 private:
     Ui::MainWindow *ui;
+
+private slots:
+    void on_newclient_clicked();
+    void on_registeredclient_clicked();
 };
 
 #endif // MAINWINDOW_H

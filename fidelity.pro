@@ -24,13 +24,26 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+    add.cpp \
+    modify.cpp \
+    addpurchase.cpp \
+    verify.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+    add.h \
+    modify.h \
+    addpurchase.h \
+    verify.h
 
 FORMS += \
-        mainwindow.ui
+        mainwindow.ui \
+    add.ui \
+    dialog.ui \
+    modify.ui \
+    addpurchase.ui \
+    verify.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
