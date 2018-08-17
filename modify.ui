@@ -28,7 +28,7 @@
       <item>
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>Nom :</string>
+         <string>Family name:</string>
         </property>
        </widget>
       </item>
@@ -59,7 +59,7 @@
       <item>
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Prénom :</string>
+         <string>First name:</string>
         </property>
        </widget>
       </item>
@@ -90,7 +90,7 @@
       <item>
        <widget class="QLabel" name="label_4">
         <property name="text">
-         <string>Date de naissance :</string>
+         <string>Birth date:</string>
         </property>
        </widget>
       </item>
@@ -121,7 +121,7 @@
       <item>
        <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>Adresse :</string>
+         <string>Address:</string>
         </property>
        </widget>
       </item>
@@ -152,7 +152,7 @@
       <item>
        <widget class="QLabel" name="label_5">
         <property name="text">
-         <string>Téléphone :</string>
+         <string>Phone number:</string>
         </property>
        </widget>
       </item>
@@ -183,7 +183,7 @@
       <item>
        <widget class="QLabel" name="label_7">
         <property name="text">
-         <string>Adresse mail :</string>
+         <string>Mail address:</string>
         </property>
        </widget>
       </item>
@@ -214,7 +214,7 @@
       <item>
        <widget class="QLabel" name="label_6">
         <property name="text">
-         <string>Type de carte</string>
+         <string>Card type</string>
         </property>
        </widget>
       </item>
@@ -255,21 +255,21 @@
     <item>
      <widget class="QPushButton" name="add_button">
       <property name="text">
-       <string>Ajouter un achat</string>
+       <string>Add a purchase</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="premium_button">
       <property name="text">
-       <string>Passer en Premium</string>
+       <string>Switch to Premium</string>
       </property>
      </widget>
     </item>
     <item>
      <widget class="QPushButton" name="end_button">
       <property name="text">
-       <string>Terminer</string>
+       <string>End</string>
       </property>
      </widget>
     </item>
@@ -290,7 +290,7 @@
     </font>
    </property>
    <property name="text">
-    <string>Informations du client :</string>
+    <string>Client's detail</string>
    </property>
   </widget>
  </widget>

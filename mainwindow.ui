@@ -14,7 +14,7 @@
    <string>Programme Fidélité</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>30</x>
@@ -27,7 +27,7 @@
      <item>
       <widget class="QGroupBox" name="groupBox">
        <property name="title">
-        <string>Ajouter</string>
+        <string>Add client</string>
        </property>
        <widget class="QPushButton" name="newclient">
         <property name="geometry">
@@ -39,7 +39,7 @@
          </rect>
         </property>
         <property name="text">
-         <string>Nouveau client</string>
+         <string>New client</string>
         </property>
        </widget>
        <widget class="QLabel" name="label">
@@ -55,7 +55,7 @@
          <bool>false</bool>
         </property>
         <property name="text">
-         <string>Pour ajouter un nouveau client à la base de données</string>
+         <string>Add a new client to the clients' database</string>
         </property>
         <property name="scaledContents">
          <bool>false</bool>
@@ -85,19 +85,19 @@
      <item>
       <widget class="QGroupBox" name="groupBox_2">
        <property name="title">
-        <string>Modifier</string>
+        <string>Registered client</string>
        </property>
        <widget class="QPushButton" name="registeredclient">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>110</y>
+          <y>150</y>
           <width>239</width>
           <height>28</height>
          </rect>
         </property>
         <property name="text">
-         <string>Client enregistré</string>
+         <string>Registered client</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_2">
@@ -113,7 +113,7 @@
          <bool>true</bool>
         </property>
         <property name="text">
-         <string>Pour ajouter un achat à un client ou changer son type de carte</string>
+         <string>Add a purchase to an existing client or change their cards type</string>
         </property>
         <property name="wordWrap">
          <bool>true</bool>
@@ -123,7 +123,7 @@
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>80</y>
+          <y>110</y>
           <width>221</width>
           <height>22</height>
          </rect>
@@ -132,10 +132,23 @@
          <string/>
         </property>
         <property name="text">
-         <string>Entrer le nom du client ici</string>
+         <string/>
         </property>
         <property name="frame">
          <bool>true</bool>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>90</y>
+          <width>241</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Enter the client's name here:</string>
         </property>
        </widget>
       </widget>
@@ -159,7 +172,7 @@
      <item>
       <widget class="QGroupBox" name="groupBox_3">
        <property name="title">
-        <string>Liste</string>
+        <string>Clients list</string>
        </property>
        <widget class="QPushButton" name="clientslist">
         <property name="geometry">
@@ -171,20 +184,20 @@
          </rect>
         </property>
         <property name="text">
-         <string>Liste des clients</string>
+         <string>Clients list</string>
         </property>
        </widget>
        <widget class="QLabel" name="label_3">
         <property name="geometry">
          <rect>
           <x>10</x>
-          <y>20</y>
+          <y>30</y>
           <width>231</width>
           <height>31</height>
          </rect>
         </property>
         <property name="text">
-         <string>Pour afficher la liste des clients</string>
+         <string> Display the clients list</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>

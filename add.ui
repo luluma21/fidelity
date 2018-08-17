@@ -28,7 +28,7 @@
       <item>
        <widget class="QLabel" name="label_2">
         <property name="text">
-         <string>Nom</string>
+         <string>Family name</string>
         </property>
        </widget>
       </item>
@@ -62,7 +62,7 @@
       <item>
        <widget class="QLabel" name="label_3">
         <property name="text">
-         <string>Prénom</string>
+         <string>First name</string>
         </property>
        </widget>
       </item>
@@ -96,7 +96,7 @@
       <item>
        <widget class="QLabel" name="label_4">
         <property name="text">
-         <string>Date de naissance</string>
+         <string>Birth date</string>
         </property>
        </widget>
       </item>
@@ -133,7 +133,7 @@
       <item>
        <widget class="QLabel" name="label_5">
         <property name="text">
-         <string>Adresse</string>
+         <string>Address</string>
         </property>
        </widget>
       </item>
@@ -167,7 +167,7 @@
       <item>
        <widget class="QLabel" name="label_6">
         <property name="text">
-         <string>Téléphone</string>
+         <string>Phone number</string>
         </property>
        </widget>
       </item>
@@ -201,7 +201,7 @@
       <item>
        <widget class="QLabel" name="label_7">
         <property name="text">
-         <string>Adresse mail</string>
+         <string>Mail address</string>
         </property>
        </widget>
       </item>
@@ -248,7 +248,7 @@
       <item>
        <widget class="QRadioButton" name="premium">
         <property name="text">
-         <string>Client &quot;Premium&quot;</string>
+         <string>Premium client</string>
         </property>
        </widget>
       </item>
@@ -266,7 +266,7 @@
     </rect>
    </property>
    <property name="text">
-    <string>Veuillez entrer les informations du client :</string>
+    <string>Please enter the clients personal information:</string>
    </property>
   </widget>
   <widget class="QWidget" name="layoutWidget_2">
@@ -289,7 +289,7 @@
     <item>
      <widget class="QPushButton" name="cancelButton">
       <property name="text">
-       <string>Annuler</string>
+       <string>Cancel</string>
       </property>
      </widget>
     </item>
