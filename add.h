@@ -2,6 +2,7 @@
 #define ADD_H
 
 #include <QDialog>
+#include "datacust.h"
 
 namespace Ui {
 class Add;

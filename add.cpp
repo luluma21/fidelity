@@ -1,8 +1,10 @@
 #include "add.h"
 #include "ui_add.h"
-#include "verify.h"
 #include <QDebug>
 #include <QMessageBox>
+#include "datacust.h"
+#include <Qfile>
+#include <QTextEdit>
 
 Add::Add(QWidget *parent) :
     QDialog(parent),
@@ -34,8 +36,25 @@ void Add::on_okButton_clicked()
             rphone=ui->phone->toPlainText();
             rmail=ui->mail->toPlainText();
             rstatus=ui->premium->isChecked();
+            QString texte;
+            QFile file("Qt.txt");
 
-            qDebug()<<rname<<rfirstname<<rbdate<<raddress<<rphone<<rmail;
+            if(file.open(QIODevice::ReadOnly | QIODevice::Text))
+            {
+                 texte = file.readAll();
+                 //fichier.close();
+            }
+            else texte = "Impossible d'ouvrir le fichier !";
+            file.close();
+
+            //QFile file("Qt.txt");
+            // On ouvre notre fichier en lecture seule et on vérifie l'ouverture
+            if (!file.open(QIODevice::WriteOnly | QIODevice::Text))
+                return;
+
+            // Création d'un objet QTextStream à partir de notre objet QFile
+            QTextStream flux(&file);
+            flux << texte << rname << "!" << rfirstname << "!" << rbdate << "!" << raddress << "!" << rphone << "!" << rmail << "!" << rstatus << "!" << 0 << "?" << endl ;
             close();
         }
         else if (reponse == QMessageBox::No)
@@ -44,12 +63,10 @@ void Add::on_okButton_clicked()
         }
 
 
-    /*Verify verif_window;
-    verif_window.exec();
-    if (verif_window.verif_token==true){
-        close();
 
-    } */
-    //close();
+    close();
+
+
 
 }
+

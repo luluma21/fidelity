@@ -1,7 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+#include "datacust.h"
 #include <QMainWindow>
+#include <Qvector>
 
 namespace Ui {
 class MainWindow;
@@ -18,6 +20,8 @@ public:
 
 private:
     Ui::MainWindow *ui;
+
+    std::vector<datacust *> list_customer ;
 
 private slots:
     void on_newclient_clicked();
