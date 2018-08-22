@@ -22,6 +22,7 @@ private:
 private slots:
     void on_newclient_clicked();
     void on_registeredclient_clicked();
+    void on_clientslist_clicked();
 };
 
 #endif // MAINWINDOW_H

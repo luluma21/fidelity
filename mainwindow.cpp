@@ -2,6 +2,7 @@
 #include "ui_mainwindow.h"
 #include "add.h"
 #include "modify.h"
+#include "clientslist.h"
 #include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -34,4 +35,10 @@ void MainWindow::on_registeredclient_clicked()
     m_window.initializeParameters("hallart","christine","26/12","mes couilles","0605015178","christine.hallart@hotmail.fr","Premium");
     m_window.exec();
 
+}
+
+void MainWindow::on_clientslist_clicked()
+{
+    ClientsList cl;
+    cl.exec();
 }

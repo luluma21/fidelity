@@ -1,5 +1,6 @@
 #include "addpurchase.h"
 #include "ui_addpurchase.h"
+#include <QMessageBox>
 
 AddPurchase::AddPurchase(QWidget *parent) :
     QDialog(parent),
@@ -15,8 +16,18 @@ AddPurchase::~AddPurchase()
 
 void AddPurchase::on_ok_button_clicked()
 {
-    r_amount=ui->amount->value();
-    close();
+    int reponse = QMessageBox::question(this, "Verification", "Is this the right amount ?", QMessageBox::Yes | QMessageBox::No);
+
+        if (reponse == QMessageBox::Yes)
+        {
+            r_amount=ui->amount->value();
+            close();
+        }
+        else if (reponse == QMessageBox::No)
+        {
+            // tu ne fait rien ...
+        }
+
 }
 
 void AddPurchase::on_exit_button_clicked()

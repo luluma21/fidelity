@@ -22,6 +22,8 @@ private slots:
 
     void on_add_button_clicked();
 
+    void on_premium_button_clicked();
+
 private:
     Ui::Modify *ui;
 
