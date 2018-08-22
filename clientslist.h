@@ -14,6 +14,10 @@ class ClientsList : public QDialog
 public:
     explicit ClientsList(QWidget *parent = 0);
     ~ClientsList();
+    void init();
+
+private slots:
+    void on_delete_2_clicked();
 
 private:
     Ui::ClientsList *ui;

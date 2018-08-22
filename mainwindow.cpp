@@ -40,5 +40,6 @@ void MainWindow::on_registeredclient_clicked()
 void MainWindow::on_clientslist_clicked()
 {
     ClientsList cl;
+
     cl.exec();
 }

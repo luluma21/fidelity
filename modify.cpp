@@ -44,11 +44,11 @@ void Modify::on_premium_button_clicked()
 
         if (reponse == QMessageBox::Yes)
         {
-
+            /*switcher le statut client */
             close();
         }
         else if (reponse == QMessageBox::No)
         {
-            // tu ne fait rien ...
+
         }
 }
