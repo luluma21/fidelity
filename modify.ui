@@ -262,7 +262,7 @@
     <item>
      <widget class="QPushButton" name="premium_button">
       <property name="text">
-       <string>Switch to Premium</string>
+       <string>Switch status</string>
       </property>
      </widget>
     </item>

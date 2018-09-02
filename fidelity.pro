@@ -28,20 +28,23 @@ SOURCES += \
     add.cpp \
     modify.cpp \
     addpurchase.cpp \
-    datacust.cpp
+    datacust.cpp \
+    clientslist.cpp
 
 HEADERS += \
         mainwindow.h \
     add.h \
     modify.h \
     addpurchase.h \
-    datacust.h
+    datacust.h \
+    clientslist.h
 
 FORMS += \
         mainwindow.ui \
     add.ui \
     modify.ui \
-    addpurchase.ui
+    addpurchase.ui \
+    clientslist.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

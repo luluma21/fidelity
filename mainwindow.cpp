@@ -109,12 +109,12 @@ void MainWindow::on_registeredclient_clicked()
         }
     }
 
-
     Modify m_window;
     if (a==-1){
         m_window.initializeParameters("pas de résultat","","","","","","");
     }
     else{
+
         if (list_customer[a]->status==0){
             m_window.initializeParameters(list_customer[a]->name,list_customer[a]->surname,list_customer[a]->birthdate,list_customer[a]->address,list_customer[a]->phonenumber,list_customer[a]->mail,"standart");
         }
@@ -123,13 +123,26 @@ void MainWindow::on_registeredclient_clicked()
         }
     }
 
+    m_window.exec();
+    bool etat;
+    etat = stat->get_change();
+    qDebug() << etat ;
+
+
+    m_window.exec();
+    if (etat == true){
+        if (list_customer[a]->status == 1){
+            list_customer[a]->status == 0;
+        }
+        else {
+            list_customer[a]->status == 1;
+        }
+    }
+
     QTextStream flux(&file);
     for (int k=0;k<list_customer.size();k++){
         flux << list_customer[k]->name << "!" << list_customer[k]->surname << "!" << list_customer[k]->birthdate << "!" << list_customer[k]->address << "!" << list_customer[k]->phonenumber << "!" << list_customer[k]->mail << "!" << list_customer[k]->status << "!" << list_customer[k]->totalpurchase << "?" << endl ;
     }
-    qDebug() << list_customer.size();
-    m_window.exec();
-
 }
 
 void MainWindow::on_clientslist_clicked()

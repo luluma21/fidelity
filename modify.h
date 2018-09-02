@@ -15,7 +15,8 @@ public:
     explicit Modify(QWidget *parent = 0);
     ~Modify();
     void initializeParameters(QString n, QString fn, QString bd, QString a, QString pn, QString m, QString ct);
-
+    bool get_change();
+    void set_change(bool a);
 
 private slots:
     void on_end_button_clicked();
@@ -26,6 +27,7 @@ private slots:
 
 private:
     Ui::Modify *ui;
+    bool change;
 
 };
 
